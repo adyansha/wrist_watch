@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Now</title>
+  <link rel="stylesheet" href="cartcss.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://kit.fontawesome.com/7aa11ec70d.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <!-- <a href="#" class="logo">
+            <i class="fa-solid fa-cookie-bite" style="color: white;margin-right: 0%;"></i>
+            <ion-icon name="fast-watch"></ion-icon> 
+                Wrist Toy
+            </a> -->
+            <div class="navigation">
+                <ul>
+                    <li><h1 class="circle"><i class="fa-solid fa-cookie-bite" style="color: white;margin-right: 0%;"></i></h1></li>
+                    <li class="wristnav" style="text-decoration: none; color: white;">Wrist Toy</li>
+                    <li style="margin-left:45% ;"><a href="index.html">Home</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="review.html">Brand Experience</a></li>
+                    <li><a href="cart.html">Shop Now</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="cart-count">0</div>
+                <h1></h1><ion-icon name="cart"  id="cart-icon" ></ion-icon></h1>
+                <!-- <h1><i class="fa-solid fa-cart-shopping"></i></h1> -->
+            </div>
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+                    <!--<div class="cart-box">
+                        <img src="images/97.jpg" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-watch-title">Special Dosai</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.72</div>
+                                <div class="cart-amt">Rs.72</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <ion-icon name="trash" class="cart-remove"></ion-icon>
+                    </div>
+                    <div class="cart-box">
+                        <img src="images/97.jpg" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-watch-title">Special Dosai</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.72</div>
+                                <div class="cart-amt">Rs.72</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <ion-icon name="trash" class="cart-remove"></ion-icon>
+                    </div>-->
+        
+                </div>       
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy" onclick="order()">Place Order</button>
+                <!-- <button class="btn-buy"><a href="success.html">Place Order</a></button> -->
+
+                <ion-icon name="close" id="cart-close"></ion-icon>
+
+            </div>
+        </div>
+    </header>
+    <div class="watch5">
+        <div class="watch5blur">
+            <h2>SMART WATCH</h2>
+            <H1>Wrist Toy</H1>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="title">Discover the Best Smart Watch</h2>
+        <div class="shop-content">
+            <div class="watch-box">
+                <div class="pic">
+                    <img src="./IMG/shop1.png" class="watch-img">
+                </div>
+                <h2 class="watch-title">Galaxy Fit</h2>
+                <p>Get GST invoice and save up to 18% on business purchases. Measure body composition with the Powerful Samsung BioActive Sensor Track your workouts on your wrist. Sleek, Seamless and Iconic Design</p>
+                <span class="watch-price">Rs.1499</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop2.png" class="watch-img"></div>
+                <h2 class="watch-title">Xtend Band</h2>
+                <p>with Alexa Built-in, 1.69” HD Display, Multiple Watch Faces, Stress Monitor, Heart & SpO2 Monitoring, 14 Sports Modes, Sleep Monitor, 5 ATM & 7 Days Battery(Charcoal Black)</p>
+                <span class="watch-price">Rs.1999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop3.png" class="watch-img"></div>
+                <h2 class="watch-title">Ninja Pro Plus</h2>
+                <p>Dressed to impress, with a large screen of 46.5mm(1.83-inches) tht ensures smooth and lavish operation. Now, see things clearly on the 240*284 pixels screen and flaunt your style with the unlimited cuntomization it offers</p>
+                <span class="watch-price">Rs.8999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop4.png" class="watch-img"></div>
+                <h2 class="watch-title">Series 6</h2>
+                <p> Series 6 Smart Watch Enabled with Heart Rate Measurer, Alarm, Bluetooth Calling, Fitness Tracker</p>
+                <span class="watch-price">Rs.1299</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop5.png" class="watch-img"></div>
+                <h2 class="watch-title">Band Plus Grand</h2>
+                <p>Grand Smart Watch with 1.69" HD Display, 60 Sports Modes, 150 Watch Faces, Spo2 Monitoring, Call Notification, Quick Replies to Text & Calls </p>
+                <span class="watch-price">Rs.2999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop6.png" class="watch-img"></div>
+                <h2 class="watch-title">Active T Series</h2>
+                <p>Active T 2.01” HD Display, Single Chip BT Calling, Rotating Crown, 200 WatchFace </p>
+                <span class="watch-price">Rs.1499</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop7.png" class="watch-img"></div>
+                <h2 class="watch-title">Active Y Series</h2>
+                <p>Active Y 2.01” HD Display, Single Chip BT Calling, Rotating Crown, 200 WatchFace</p>
+                <span class="watch-price">Rs.6999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic">
+                    <img src="./IMG/shop1.png" class="watch-img">
+                </div>
+                <h2 class="watch-title">Galaxy Fit</h2>
+                <p>Get GST invoice and save up to 18% on business purchases. Measure body composition with the Powerful Samsung BioActive Sensor Track your workouts on your wrist. Sleek, Seamless and Iconic Design</p>
+                <span class="watch-price">Rs.1499</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop2.png" class="watch-img"></div>
+                <h2 class="watch-title">Xtend Band</h2>
+                <p>with Alexa Built-in, 1.69” HD Display, Multiple Watch Faces, Stress Monitor, Heart & SpO2 Monitoring, 14 Sports Modes, Sleep Monitor, 5 ATM & 7 Days Battery(Charcoal Black)</p>
+                <span class="watch-price">Rs.1999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop3.png" class="watch-img"></div>
+                <h2 class="watch-title">Ninja Pro Plus</h2>
+                <p>Dressed to impress, with a large screen of 46.5mm(1.83-inches) tht ensures smooth and lavish operation. Now, see things clearly on the 240*284 pixels screen and flaunt your style with the unlimited cuntomization it offers</p>
+                <span class="watch-price">Rs.8999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop4.png" class="watch-img"></div>
+                <h2 class="watch-title">Series 6</h2>
+                <p> Series 6 Smart Watch Enabled with Heart Rate Measurer, Alarm, Bluetooth Calling, Fitness Tracker</p>
+                <span class="watch-price">Rs.1299</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop5.png" class="watch-img"></div>
+                <h2 class="watch-title">Band Plus Grand</h2>
+                <p>Grand Smart Watch with 1.69" HD Display, 60 Sports Modes, 150 Watch Faces, Spo2 Monitoring, Call Notification, Quick Replies to Text & Calls </p>
+                <span class="watch-price">Rs.2999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop6.png" class="watch-img"></div>
+                <h2 class="watch-title">Active T Series</h2>
+                <p>Active T 2.01” HD Display, Single Chip BT Calling, Rotating Crown, 200 WatchFace </p>
+                <span class="watch-price">Rs.1499</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop7.png" class="watch-img"></div>
+                <h2 class="watch-title">Active Y Series</h2>
+                <p>Active Y 2.01” HD Display, Single Chip BT Calling, Rotating Crown, 200 WatchFace</p>
+                <span class="watch-price">Rs.6999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic">
+                    <img src="./IMG/shop1.png" class="watch-img">
+                </div>
+                <h2 class="watch-title">Galaxy Fit</h2>
+                <p>Get GST invoice and save up to 18% on business purchases. Measure body composition with the Powerful Samsung BioActive Sensor Track your workouts on your wrist. Sleek, Seamless and Iconic Design</p>
+                <span class="watch-price">Rs.1499</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop2.png" class="watch-img"></div>
+                <h2 class="watch-title">Xtend Band</h2>
+                <p>with Alexa Built-in, 1.69” HD Display, Multiple Watch Faces, Stress Monitor, Heart & SpO2 Monitoring, 14 Sports Modes, Sleep Monitor, 5 ATM & 7 Days Battery(Charcoal Black)</p>
+                <span class="watch-price">Rs.1999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop3.png" class="watch-img"></div>
+                <h2 class="watch-title">Ninja Pro Plus</h2>
+                <p>Dressed to impress, with a large screen of 46.5mm(1.83-inches) tht ensures smooth and lavish operation. Now, see things clearly on the 240*284 pixels screen and flaunt your style with the unlimited cuntomization it offers</p>
+                <span class="watch-price">Rs.8999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop4.png" class="watch-img"></div>
+                <h2 class="watch-title">Series 6</h2>
+                <p> Series 6 Smart Watch Enabled with Heart Rate Measurer, Alarm, Bluetooth Calling, Fitness Tracker</p>
+                <span class="watch-price">Rs.1299</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop5.png" class="watch-img"></div>
+                <h2 class="watch-title">Band Plus Grand</h2>
+                <p>Grand Smart Watch with 1.69" HD Display, 60 Sports Modes, 150 Watch Faces, Spo2 Monitoring, Call Notification, Quick Replies to Text & Calls </p>
+                <span class="watch-price">Rs.2999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop6.png" class="watch-img"></div>
+                <h2 class="watch-title">Active T Series</h2>
+                <p>Active T 2.01” HD Display, Single Chip BT Calling, Rotating Crown, 200 WatchFace </p>
+                <span class="watch-price">Rs.1499</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="watch-box">
+                <div class="pic"><img src="./IMG/shop7.png" class="watch-img"></div>
+                <h2 class="watch-title">Active Y Series</h2>
+                <p>Active Y 2.01” HD Display, Single Chip BT Calling, Rotating Crown, 200 WatchFace</p>
+                <span class="watch-price">Rs.6999</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+        </div>
+    </div>
+    <script src="cartjs.js"></script>
+</body>
+</html>

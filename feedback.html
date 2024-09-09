@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="feedbackstyle.css">
+    <script src="https://kit.fontawesome.com/7aa11ec70d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><h1 class="circle"><i class="fa-solid fa-cookie-bite" style="color: white;margin-right: 0%;"></i></h1></li>
+            <li class="wristnav" style="text-decoration: none; color: white;">Wrist Toy</li>
+            <li style="margin-left:45% ;"><a href="index.html">Home</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="review.html">Brand Experience</a></li>
+            <li><a href="cart.html">Shop Now</a></li>
+        </ul>
+    </div>
+     <!-- <div class="container"> 
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="Your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+    <script src="script.js"></script> -->
+
+    <div class="container">
+        <form>
+            <h1>Feedback</h1>
+            <!-- <div class="inputcontrol">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>    
+                 <span>error msg</span> 
+                 <div class="error"></div> 
+
+            </div>
+            <div class="inputcontrol">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                 <i class="fa-solid fa-circle-check"></i> 
+
+                 <i class="fa-solid fa-circl e-info"></i> 
+
+                 <span>error msg</span>  
+
+
+                 <div class="error"></div> 
+
+            </div>
+            <div class="inputcontrol">
+                <label for="message">Feedback Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                 <span>error msg</span>  
+
+
+                 <div class="error"></div> 
+
+            </div>
+            <button type="submit">Submit</button> -->
+            <label for="fname"><b>First Name:</b></label>
+            <input type="text" id="fname" placeholder="First Name" ><br>
+            <span id="message"></span>
+
+            <label for="lname" ><b>Last Name:</b></label>
+            <input type="text" id="lname" placeholder="Last Name" ><br>
+            <span id="message2"></span>
+
+
+            <label for="email" ><b>Email:</b></label>
+            <input type="text" id="email" placeholder="abc@gmail.com" ><br>
+            <span id="message3"></span>
+
+            <label for="phone" ><b>Phone Number:</b></label>
+            <input type="text" id="phone" placeholder="+91-00000-00000" ><br>
+            <span id="message4"></span>
+            <label for="message"><b>Feedback Message:</b></label>
+            <textarea type="message" name="message" placeholder="Your message" required></textarea>
+
+            <button type="button" value="Submit" onclick="validateForm()">Submit</button>
+
+
+        </form> 
+        <p>For more details <strong>Contact Us</strong> at :<b>  +91-12345-67890</b></p>
+    </div>
+    <div id="display">
+        <h2><b>Submitted Information:</b></h2>
+        
+        <p><b>First Name:</b>&nbsp;<span id="dfname"> </span></p>
+        <hr>
+        <p><b>Last Name:</b>&nbsp;<span id="dlname"> </span></p>
+        <hr>
+        <p><b>Email:</b>&nbsp;<span id="mail"> </span></p>
+        <hr>
+        <p><b>Phone:</b>&nbsp;<span id="mobile"> </span></p>
+        <hr>
+    </div>
+<script>
+    function validateForm() {
+
+         var returnVal = true;
+
+         let ab = document.getElementById('fname').value;
+         let regExpF = /^[A-Za-z]{3,10}$/;
+         if (!regExpF.test(ab)) {
+             document.getElementById('message').innerHTML = "first name should 3 to 10 character long";
+             returnVal = false;
+         } else {
+             document.getElementById('message').innerHTML = "";
+             let x = document.getElementById("fname").value;
+         document.getElementById('dfname').innerHTML = x;
+
+         }
+
+
+         let ac = document.getElementById('lname').value;
+         let regExpl = /^[A-Za-z]{3,10}$/;
+         if (!regExpl.test(ac)) {
+           document.getElementById('message2').innerHTML = "last name should 3 to 10 character long";
+            returnVal = false;
+         } else {
+             document.getElementById('message2').innerHTML = "";
+             let y = document.getElementById("lname").value;
+         document.getElementById('dlname').innerHTML = y;
+         }
+
+         let ad = document.getElementById('email').value;
+         let regExpE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+         if (!regExpE.test(ad)) {
+             document.getElementById('message3').innerHTML = "invalid email";
+             returnVal = false;
+         }
+         else {
+             document.getElementById('message3').innerHTML = "";
+             let z = document.getElementById("email").value;
+         document.getElementById('mail').innerHTML = z;
+
+         }
+
+
+         let ae = document.getElementById('phone').value;
+         let regExpP = /^\+\d{2}-\d{5}-\d{5}$/;
+
+         if (!regExpP.test(ae)) {
+             document.getElementById('message4').innerHTML = "Format should be +91-XXXXX-XXXXX";
+             returnVal = false;
+         }
+         else {
+             document.getElementById('message4').innerHTML = "";
+             let a = document.getElementById("phone").value;
+         document.getElementById('mobile').innerHTML = a;
+
+         }
+         return returnVal;
+            }
+
+    </script>
+
+</body>
+
+</html>
